@@ -1,0 +1,1449 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='newnbadf' inline='true' name='federated.006q0un1eera2p1cvqn4j172gvqg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='newnbadf' name='textscan.01pzdmv1hmolkr1gqoi3f1htik48'>
+            <connection class='textscan' directory='/Users/darryljackson/Desktop/Nba_Data' filename='newnbadf.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.01pzdmv1hmolkr1gqoi3f1htik48' name='newnbadf.csv' table='[newnbadf#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='response.player.id' ordinal='1' />
+            <column datatype='string' name='response.player.firstname' ordinal='2' />
+            <column datatype='string' name='response.player.lastname' ordinal='3' />
+            <column datatype='string' name='response.team.code' ordinal='4' />
+            <column datatype='string' name='response.team.logo' ordinal='5' />
+            <column datatype='integer' name='response.game.id' ordinal='6' />
+            <column datatype='integer' name='response.points' ordinal='7' />
+            <column datatype='string' name='response.pos' ordinal='8' />
+            <column datatype='real' name='response.min' ordinal='9' />
+            <column datatype='integer' name='response.fgm' ordinal='10' />
+            <column datatype='integer' name='response.fga' ordinal='11' />
+            <column datatype='real' name='response.fgp' ordinal='12' />
+            <column datatype='integer' name='response.ftm' ordinal='13' />
+            <column datatype='integer' name='response.fta' ordinal='14' />
+            <column datatype='real' name='response.ftp' ordinal='15' />
+            <column datatype='integer' name='response.tpm' ordinal='16' />
+            <column datatype='integer' name='response.tpa' ordinal='17' />
+            <column datatype='real' name='response.tpp' ordinal='18' />
+            <column datatype='integer' name='response.offReb' ordinal='19' />
+            <column datatype='integer' name='response.defReb' ordinal='20' />
+            <column datatype='integer' name='response.totReb' ordinal='21' />
+            <column datatype='integer' name='response.assists' ordinal='22' />
+            <column datatype='integer' name='response.pFouls' ordinal='23' />
+            <column datatype='integer' name='response.steals' ordinal='24' />
+            <column datatype='integer' name='response.turnovers' ordinal='25' />
+            <column datatype='integer' name='response.blocks' ordinal='26' />
+            <column datatype='integer' name='response.plusMinus' ordinal='27' />
+            <column datatype='integer' name='response.pra' ordinal='28' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.player.id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.player.id]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.player.id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.player.firstname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[response.player.firstname]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.player.firstname</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.player.lastname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[response.player.lastname]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.player.lastname</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.team.code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[response.team.code]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.team.code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.team.logo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[response.team.logo]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.team.logo</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.game.id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.game.id]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.game.id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.points]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.points</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.pos</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[response.pos]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.pos</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[response.min]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.min</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.fgm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.fgm]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.fgm</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.fga</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.fga]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.fga</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.fgp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[response.fgp]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.fgp</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.ftm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.ftm]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.ftm</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.fta</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.fta]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.fta</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.ftp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[response.ftp]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.ftp</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.tpm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.tpm]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.tpm</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.tpa</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.tpa]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.tpa</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.tpp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[response.tpp]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.tpp</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.offReb</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.offReb]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.offReb</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.defReb</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.defReb]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.defReb</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.totReb</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.totReb]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.totReb</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.assists</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.assists]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.assists</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.pFouls</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.pFouls]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.pFouls</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.steals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.steals]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.steals</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.turnovers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.turnovers]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.turnovers</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.blocks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.blocks]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.blocks</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.plusMinus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.plusMinus]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.plusMinus</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>response.pra</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[response.pra]</local-name>
+            <parent-name>[newnbadf.csv]</parent-name>
+            <remote-alias>response.pra</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='newnbadf.csv' datatype='table' name='[__tableau_internal_object_id__].[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]' role='measure' type='quantitative' />
+      <column caption='Response.Assists' datatype='integer' name='[response.assists]' role='measure' type='quantitative' />
+      <column caption='Response.Blocks' datatype='integer' name='[response.blocks]' role='measure' type='quantitative' />
+      <column caption='Response.Fga' datatype='integer' name='[response.fga]' role='measure' type='quantitative' />
+      <column caption='Response.Fgm' datatype='integer' name='[response.fgm]' role='measure' type='quantitative' />
+      <column caption='Response.Fgp' datatype='real' name='[response.fgp]' role='measure' type='quantitative' />
+      <column caption='Response.Fta' datatype='integer' name='[response.fta]' role='measure' type='quantitative' />
+      <column caption='Response.Ftm' datatype='integer' name='[response.ftm]' role='measure' type='quantitative' />
+      <column caption='Response.Ftp' datatype='real' name='[response.ftp]' role='measure' type='quantitative' />
+      <column caption='Response.Game.Id' datatype='integer' name='[response.game.id]' role='dimension' type='ordinal' />
+      <column caption='Response.Min' datatype='real' name='[response.min]' role='measure' type='quantitative' />
+      <column caption='Response.Player.Firstname' datatype='string' name='[response.player.firstname]' role='dimension' type='nominal' />
+      <column caption='Response.Player.Id' datatype='integer' name='[response.player.id]' role='dimension' type='ordinal' />
+      <column caption='Response.Player.Lastname' datatype='string' name='[response.player.lastname]' role='dimension' type='nominal' />
+      <column caption='Response.Points' datatype='integer' name='[response.points]' role='measure' type='quantitative' />
+      <column caption='Response.Pos' datatype='string' name='[response.pos]' role='dimension' type='nominal' />
+      <column caption='Response.Pra' datatype='integer' name='[response.pra]' role='measure' type='quantitative' />
+      <column caption='Response.Steals' datatype='integer' name='[response.steals]' role='measure' type='quantitative' />
+      <column caption='Response.Team.Code' datatype='string' name='[response.team.code]' role='dimension' type='nominal' />
+      <column caption='Response.Team.Logo' datatype='string' name='[response.team.logo]' role='dimension' type='nominal' />
+      <column caption='Response.Tpa' datatype='integer' name='[response.tpa]' role='measure' type='quantitative' />
+      <column caption='Response.Tpm' datatype='integer' name='[response.tpm]' role='measure' type='quantitative' />
+      <column caption='Response.Tpp' datatype='real' name='[response.tpp]' role='measure' type='quantitative' />
+      <column caption='Response.Turnovers' datatype='integer' name='[response.turnovers]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/b9/7gc9y9vj4sv5nykg71skgxkh0000gn/T/tableau-temp/#TableauTemp_1ggntd60nq33mm1059geb12rs0pt.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/22/2024 06:25:28 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2506</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.player.id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.player.id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.player.id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1007</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.player.firstname</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[response.player.firstname]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.player.firstname</remote-alias>
+              <ordinal>2</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>726</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.player.lastname</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[response.player.lastname]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.player.lastname</remote-alias>
+              <ordinal>3</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>839</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.team.code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[response.team.code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.team.code</remote-alias>
+              <ordinal>4</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.team.logo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[response.team.logo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.team.logo</remote-alias>
+              <ordinal>5</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.game.id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.game.id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.game.id</remote-alias>
+              <ordinal>6</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3037</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.points</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.points]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.points</remote-alias>
+              <ordinal>7</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.pos</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[response.pos]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.pos</remote-alias>
+              <ordinal>8</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.min</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[response.min]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.min</remote-alias>
+              <ordinal>9</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.fgm</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.fgm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.fgm</remote-alias>
+              <ordinal>10</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.fga</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.fga]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.fga</remote-alias>
+              <ordinal>11</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.fgp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[response.fgp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.fgp</remote-alias>
+              <ordinal>12</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>218</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.ftm</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.ftm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.ftm</remote-alias>
+              <ordinal>13</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.fta</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.fta]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.fta</remote-alias>
+              <ordinal>14</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.ftp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[response.ftp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.ftp</remote-alias>
+              <ordinal>15</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.tpm</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.tpm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.tpm</remote-alias>
+              <ordinal>16</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.tpa</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.tpa]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.tpa</remote-alias>
+              <ordinal>17</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.tpp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[response.tpp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.tpp</remote-alias>
+              <ordinal>18</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.offReb</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.offReb]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.offReb</remote-alias>
+              <ordinal>19</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.defReb</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.defReb]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.defReb</remote-alias>
+              <ordinal>20</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.totReb</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.totReb]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.totReb</remote-alias>
+              <ordinal>21</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.assists</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.assists]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.assists</remote-alias>
+              <ordinal>22</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.pFouls</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.pFouls]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.pFouls</remote-alias>
+              <ordinal>23</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.steals</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.steals]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.steals</remote-alias>
+              <ordinal>24</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.turnovers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.turnovers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.turnovers</remote-alias>
+              <ordinal>25</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.blocks</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.blocks]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.blocks</remote-alias>
+              <ordinal>26</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.plusMinus</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.plusMinus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.plusMinus</remote-alias>
+              <ordinal>27</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>107</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>response.pra</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[response.pra]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>response.pra</remote-alias>
+              <ordinal>28</ordinal>
+              <family>newnbadf.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>86</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[newnbadf.csv_113D60D2B67944A08E1F4416A7E91084]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='10000' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='newnbadf.csv' id='newnbadf.csv_113D60D2B67944A08E1F4416A7E91084'>
+            <properties context=''>
+              <relation connection='textscan.01pzdmv1hmolkr1gqoi3f1htik48' name='newnbadf.csv' table='[newnbadf#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='response.player.id' ordinal='1' />
+                  <column datatype='string' name='response.player.firstname' ordinal='2' />
+                  <column datatype='string' name='response.player.lastname' ordinal='3' />
+                  <column datatype='string' name='response.team.code' ordinal='4' />
+                  <column datatype='string' name='response.team.logo' ordinal='5' />
+                  <column datatype='integer' name='response.game.id' ordinal='6' />
+                  <column datatype='integer' name='response.points' ordinal='7' />
+                  <column datatype='string' name='response.pos' ordinal='8' />
+                  <column datatype='real' name='response.min' ordinal='9' />
+                  <column datatype='integer' name='response.fgm' ordinal='10' />
+                  <column datatype='integer' name='response.fga' ordinal='11' />
+                  <column datatype='real' name='response.fgp' ordinal='12' />
+                  <column datatype='integer' name='response.ftm' ordinal='13' />
+                  <column datatype='integer' name='response.fta' ordinal='14' />
+                  <column datatype='real' name='response.ftp' ordinal='15' />
+                  <column datatype='integer' name='response.tpm' ordinal='16' />
+                  <column datatype='integer' name='response.tpa' ordinal='17' />
+                  <column datatype='real' name='response.tpp' ordinal='18' />
+                  <column datatype='integer' name='response.offReb' ordinal='19' />
+                  <column datatype='integer' name='response.defReb' ordinal='20' />
+                  <column datatype='integer' name='response.totReb' ordinal='21' />
+                  <column datatype='integer' name='response.assists' ordinal='22' />
+                  <column datatype='integer' name='response.pFouls' ordinal='23' />
+                  <column datatype='integer' name='response.steals' ordinal='24' />
+                  <column datatype='integer' name='response.turnovers' ordinal='25' />
+                  <column datatype='integer' name='response.blocks' ordinal='26' />
+                  <column datatype='integer' name='response.plusMinus' ordinal='27' />
+                  <column datatype='integer' name='response.pra' ordinal='28' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='newnbadf' name='federated.006q0un1eera2p1cvqn4j172gvqg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.006q0un1eera2p1cvqn4j172gvqg'>
+            <column-instance column='[response.player.firstname]' derivation='None' name='[none:response.player.firstname:nk]' pivot='key' type='nominal' />
+            <column-instance column='[response.player.lastname]' derivation='None' name='[none:response.player.lastname:nk]' pivot='key' type='nominal' />
+            <column caption='Response.Player.Firstname' datatype='string' name='[response.player.firstname]' role='dimension' type='nominal' />
+            <column caption='Response.Player.Lastname' datatype='string' name='[response.player.lastname]' role='dimension' type='nominal' />
+            <column caption='Response.Pra' datatype='integer' name='[response.pra]' role='measure' type='quantitative' />
+            <column-instance column='[response.pra]' derivation='Sum' name='[sum:response.pra:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.006q0un1eera2p1cvqn4j172gvqg].[none:response.player.lastname:nk]' direction='DESC' using='[federated.006q0un1eera2p1cvqn4j172gvqg].[sum:response.pra:qk]' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.006q0un1eera2p1cvqn4j172gvqg].[none:response.player.firstname:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.006q0un1eera2p1cvqn4j172gvqg].[sum:response.pra:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.006q0un1eera2p1cvqn4j172gvqg].[sum:response.pra:qk]' field-type='quantitative' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='10' />
+            <format attr='div-level' scope='cols' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.006q0un1eera2p1cvqn4j172gvqg].[sum:response.pra:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.006q0un1eera2p1cvqn4j172gvqg].[sum:response.pra:qk]</rows>
+        <cols>([federated.006q0un1eera2p1cvqn4j172gvqg].[none:response.player.lastname:nk] / [federated.006q0un1eera2p1cvqn4j172gvqg].[none:response.player.firstname:nk])</cols>
+      </table>
+      <simple-id uuid='{ED8C3307-0684-487F-898B-C01D87F1CAB2}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E5C4ACAD-B5B2-47AE-90D2-A15BE2000FE4}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      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
+      REQuxQRARORSTABERC7FBEBE5FJMAERELsUEQETkUkwAREQuxQRARORSTABERC7FBEBE5FJM
+      AERELsUEQETkUkwAREQuxQRARORSTABERC7FBEBE5FJMAERELsUEQETkUkwAREQuxQRARORS
+      TABERC61KAnAsiycOnUKiUQC0WgUP//5z3Ht2jUIITA6Oop33nkHvb29AIDu7m68/fbbmJiY
+      WIyqEBFRHouSAK5evYquri4kk0mcOHECu3btwtDQEILBIE6dOoUnnngCra2tiEQiuHbtGp54
+      4gmcPHkSQojFqA4REeWgOh0wEolgeHgY69evhxACkiShtLQU69atw8DAAPx+P3RdR3V1NUZH
+      R1FbW4uioiL4fD6YpglgZgUBAOl0Gslkct59FhUVFVTOsiwoiuJozHQ6DcMwHI0phICu6wWV
+      1TQNqVQKsjx/Li90/6qqwjRNR9skSRKEEI73kyRJjsY0TROqqjo+RoCZfnUqJgDIsuz4/HC6
+      7ZZlwePxFNz3hba90P1rmgbDMOxjihMxVVWFZVmOzw8Ajs+P+Y53jieAkydPQlEUdHR0QAgB
+      y7Lsia/run2QNwwDmqYhnU5DCAHTNCFJEmRZhqIoAACPxwNd1+fd59jYGKqqquYtZ5omTNN0
+      NKYsy1BV1dGYQghMTEwUVHZychJlZWV2nzmx/1AoBK/X62ib4vE4JElyNGZm7Djd94ZhOBrT
+      4/FA0zRHY6ZSKViW5WhMy7Icb7thGEin0wXFVBSloHIL2X8wGITf74fH43EsZjgchq7rjvZT
+      IpFwfH4YhjHv8c7xS0AHDx7EM888g3Xr1mHTpk2oqKjA2bNnce3aNaxatQqWZeHSpUuYnJxE
+      bW0tRkZGcOnSJSiKAlmWIUmS/R8RES0ex1cAmWXu7t274fF4sGfPHoyMjKCpqQm6ruPAgQMY
+      HR3F5s2boaoqXnzxRUxMTKC5uZkHfSKie8jxBJBx97Kjtrb2lztUVdTX188qd/fvRER0b/B9
+      AERELsUEQETkUkwAREQuxQRARORSTABERC7FBEBE5FJMAERELsUEQETkUkwAREQuxQRARORS
+      TABERC7FBEBE5FJMAERELsUEQETkUkwAREQuxQRARORSTABERC7FBEBE5FJMAERELsUEQETk
+      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
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
